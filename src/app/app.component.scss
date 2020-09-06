@@ -1,0 +1,11 @@
+.body
+{
+   margin-left:180px;
+}
+
+@media(max-width:768px){
+   .body {
+      margin:0;
+      margin-top:100px
+   }
+}

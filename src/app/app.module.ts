@@ -1,3 +1,4 @@
+import { AdminModule } from './admin/admin.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -18,13 +19,13 @@ import { NotFoundComponent } from './site/not-found/not-found.component';
     MainPageComponent,
     CartComponent,
     ShipComponent,
-    DashboardComponent,
-    AddComponent,
-    NotFoundComponent
+    NotFoundComponent,
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

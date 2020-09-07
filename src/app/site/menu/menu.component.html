@@ -1,8 +1,8 @@
 <header class="menu__wrapper">
   <div class="logo menu__logo"><a [routerLink]="['']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}"><img
         src="./assets/Img/PizzaLogo.svg" alt="Пицерия_логотип"></a></div>
-  <nav class="menu">
-    <button class="burger" (click)="toggle = !toggle">
+  <nav class="menu" aria-label="Меню сайта">
+    <button class="burger" (click)="toggle = !toggle" aria-label="открытие меню">
       <div class="line1" [class.open]="toggle"></div>
       <div class="line2" [class.open]="toggle"></div>
       <div class="line3" [class.open]="toggle"></div>

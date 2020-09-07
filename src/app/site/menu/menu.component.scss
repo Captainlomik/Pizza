@@ -125,6 +125,11 @@ button.burger{
     outline:none;
     border:none;
 }
+
+.menu__logo:hover 
+{
+ animation:  buzz 1s linear 1;
+}
 @keyframes shake {
   100% {
     transform: translateY(-10px) translateX(-5px);
@@ -170,6 +175,15 @@ button.burger{
 {
     from {-webkit-transform: rotate(0deg)  translateX(5px);}
     to {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes buzz
+{
+  0%, 50%, 100% {transform: rotateZ(0deg);}
+  25%{transform: rotateZ(-20deg);}
+  75% {transform: rotateZ(20deg)}
+
+
 }
 
 @media (max-width:768px) {

@@ -11,7 +11,7 @@ const routes: Routes = [
   {path:'', component:MainPageComponent},
   {path:'cart', component:CartComponent}, 
   {path:'ship', component:ShipComponent},
-  {path:'dashboard', component:DashboardComponent},
+  {path:'admin', loadChildren:'./admin/admin.module#AdminModule'},
   {path:'404', component:NotFoundComponent},
   {path:'**', redirectTo:'404'}
 ];
